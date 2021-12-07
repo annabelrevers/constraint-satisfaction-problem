@@ -26,11 +26,7 @@ AC-3 is also implemented in this class, an inference technique that checks the a
 
 **MapProblem**
 
-The map-coloring problem selects a color for each territory in Australia. This problem involves several binary constraints–each pair of adjacent territories may not have the same color.
-
-![Australia](australia.png)
-
-![Sample Solution](colored.png)
+The map-coloring problem selects a color for each territory in Australia. This problem involves several binary constraints–each pair of adjacent territories may not have the same color. 
 
 **CircuitBoardProblem**
 
