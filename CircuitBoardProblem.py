@@ -34,7 +34,6 @@ class CircuitBoardProblem(ConstraintSatisfactionProblem):
                 for y in range(self.height):
                     current_domains[i].append((x,y))    
 
-        #(current_domains)
         return current_domains
 
     # generates the binary constraints for each piece
@@ -44,8 +43,6 @@ class CircuitBoardProblem(ConstraintSatisfactionProblem):
             for j in range(len(self.pieces)):
                 if i != j:
                     constraints.append((i, j))
-
-        #print("constraints:  ", constraints)
         
         return constraints
 
@@ -56,6 +53,7 @@ class CircuitBoardProblem(ConstraintSatisfactionProblem):
         for piece in self.pieces:
             piece_to_char[piece] = chr(letter)
             letter += 1
+
         return piece_to_char
     
     # checks if value assignment for var would be consistent with current assignment
@@ -171,7 +169,6 @@ class CircuitBoardProblem(ConstraintSatisfactionProblem):
         for row in board:
             for thing in row:
                 print(thing, end="")
-                #print(a[i], end =" ")
             print("\n", end="")
     
 # test code
